@@ -1,0 +1,13 @@
+# Entorno virtual
+venv/
+
+# Variables y credenciales
+.env
+Settings/Config.py
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+
+# Configuraciones locales de VSCode
+.vscode/
