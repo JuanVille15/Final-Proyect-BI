@@ -100,7 +100,7 @@ tbl_efectivas['Diff'] = (pd.to_datetime(tbl_efectivas['FECHA_RECAUDO'])- pd.to_d
 
 tbl_efectivas = tbl_efectivas[(tbl_efectivas['Diff'] >= 0) & (tbl_efectivas['Diff'] != np.nan)]
 
-tbl_efectivas_final = tbl_efectivas.sort_values(by='Diff', ascending=True).drop_duplicates(keep='first')
+tbl_efectivas_final = tbl_efectivas.sort_values(by='Diff', ascending=True).drop_duplicates(subset='ID',keep='first')
 
 tbl_efectivas_final['Recaudada'] = 1
 
